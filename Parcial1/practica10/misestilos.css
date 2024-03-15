@@ -1,0 +1,42 @@
+.parrafo{
+    border: 1px solid plum;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: yellowgreen;
+    font-size: larger;
+    font-weight: 500;
+
+}
+div{
+    border: 3px solid powderblue;
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    font-weight: 300;
+}
+
+span{
+    color: yellowgreen;
+    font-size: oblique;
+    font-weight: 700;
+}
+
+#boton{
+    background-color: lightgreen;
+    border: none;
+}
+
+.texto{
+    color:  green;
+}
+
+.link{
+    color: green;
+}
+
+a:hover{
+    color: goldenrod;
+}
