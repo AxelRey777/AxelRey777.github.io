@@ -3,4 +3,4 @@ Reyes Aguilar Axel
 
 PROYECTO PÁGINA WEB
 [Wattpad](https://www.wattpad.com/)
-![imagen wattpad](wattpad/Captura.png)
+![imagen wattpad](https://github.com/AxelRey777/AxelRey777.github.io/blob/main/wattpad/captura.png)
