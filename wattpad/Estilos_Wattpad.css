@@ -14,3 +14,29 @@ h2{
     font-weight: 700 !important;
     color: #ff6122 !important;
 }
+
+#navbarEscribe{
+    font-size: 16px !important;
+    font-weight: 600;
+    color: black;
+}
+svg{
+    stroke: rgb(232, 18, 73);
+    fill: rgb(232, 18, 73);
+    width: 20;
+    height: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.boton {    
+    width: 194.875px; 
+    height: 42px;
+    background-color: #21164c; 
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 0 24px 24px;
+    padding: 10px;
+  }
