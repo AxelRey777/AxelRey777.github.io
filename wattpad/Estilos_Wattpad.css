@@ -20,23 +20,52 @@ h2{
     font-weight: 600;
     color: black;
 }
+#Escribe1{
+    margin-top: 6px;
+}
 svg{
     stroke: rgb(232, 18, 73);
     fill: rgb(232, 18, 73);
     width: 20;
     height: 20;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    display: flexbox;
+    text-align: center;
+    margin-top: 9px;
 }
-.boton {    
-    width: 194.875px; 
+#botonpremium {    
+    width: 200.875px !important; 
     height: 42px;
     background-color: #21164c; 
+    text-align: center!important;
+    word-spacing: 0px;
     border: none;
     border-radius: 50%; 
     cursor: pointer;
     color: white;
     font-weight: bold;
     padding: 0 24px 24px;
-    padding: 10px;
+    margin: 6px 6px 6px 6px;
+    border-radius: 476.5px;
+    display:flex !important;
+    
+    
+    
   }
+#TextoPremium{
+    height: 16px;
+    width: 118.875;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center !important;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    outline-offset: 1px !important;
+    color: white;
+    margin: 0px 0px 0px 8px;
+    min-height: auto !important;
+    min-width: auto !important;
+    white-space: nowrap !important;
+    word-spacing: 0px !important;
+    text-decoration: none;
+    margin-top: 6px;
+}
