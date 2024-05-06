@@ -1,18 +1,22 @@
+#DiseñoSuperior{
+    background-color:white !important;
+}
+#DiseñoSuperior2{
+    background-color:white !important;
+}
+
+
 #navbarExplorar{
     font-size: 16px !important;
     font-weight: 600;
     color: black;
+    margin-top: 7px;
 }
 #navbarComunidad{
     font-size: 16px !important;
     font-weight: 600;
     color: black;
-}
-
-h2{
-    font-size: 70px !important;
-    font-weight: 700 !important;
-    color: #ff6122 !important;
+    margin-top: 7px;
 }
 
 #navbarEscribe{
@@ -22,6 +26,7 @@ h2{
 }
 #Escribe1{
     margin-top: 6px;
+    margin-left: 10px;
 }
 svg{
     stroke: rgb(232, 18, 73);
@@ -68,4 +73,332 @@ svg{
     word-spacing: 0px !important;
     text-decoration: none;
     margin-top: 6px;
+}
+#InicioSesion{
+    margin-top: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 0px;
+    border: none;
+    background-color: white;
+
+
+}
+#registro{
+    margin-top: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 0px;
+    border: none;
+    background-color: white;
+
+}
+#botonlupa{
+    border: none;
+    background-color: white;
+}
+
+#search{
+   width: 683px; 
+   border: none;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 620;
+}
+input#search::placeholder {
+    color: black;
+  }
+
+#lupaemote{
+    width: 23px; 
+    height: 23px; 
+    fill: black;
+    stroke: black; 
+    stroke-width: 2.5px; 
+    stroke-linecap: round;
+    margin-left: 20px;
+    margin-top: -12px;
+    
+}
+#circulo{
+    fill: none;
+}
+
+
+#imagencompu{
+    height: 360.3px;
+    width: 570px;
+    margin-top: -270px;
+    margin-left: 450px;
+}
+
+#h2INICIAL{
+ font-size: 60px;
+ font-weight: 700 ;
+ color: #ff6122;
+ height: 75.2px;
+ width: 570px;
+ margin: 16px 0 30px 0;
+ margin-left: 150px;
+
+}
+#h3INICIAL{
+ font-size: 25px;
+ word-spacing: 0px;
+ height: 32px;
+ width: 570px;
+ margin: 24px 0 12px 0;
+ margin-left: 150px;
+ 
+}
+#h4INICIAL{
+    font-size: 20px;
+    word-spacing: 0px;
+    height: 102.4px;
+    width: 570px;
+    margin: 20px 0 0 0;
+    color: #6f6F6F;
+    margin-left: 150px;
+
+}
+#mensajefecha{
+    color: #6f6F6F;
+    font-size: 14px;
+    height: 16.8889px;
+    width: 570px;
+    margin: 4px 0 40px 0;
+    margin-left: 150px;
+    
+}
+
+#botonreading{
+    margin-left: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: 0px;
+    background-color: #ff6122;
+    height: 43.2px;
+    width: 170px;
+    border: 2px solid #ffffff;
+    padding: 5px 25px 5px 25px;
+    min-width: 170px;
+    border-radius: 10px;
+    color: white;
+}
+
+#botonwriting{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: 0px;
+    background-color: #ff6122;
+    height: 43.2px;
+    width: 170px;
+    border: 2px solid #ffffff;
+    padding: 5px 25px 5px 25px;
+    min-width: 170px;
+    border-radius: 10px;
+    color: white;
+
+}
+#yourtstory{
+    font-size: 24px;
+    font-weight: 700;
+    height: 55.4px;
+    width: 182.738px;
+    margin: 70px 0 40px 0;
+    margin-left: 650px;
+}
+#tvimage{
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+word-spacing: 0px;
+height: 24px;
+width: 24px;
+margin: 0 0 10px 0;
+margin-left: 400px;
+
+}
+#cineimage{
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+word-spacing: 0px;
+height: 24px;
+width: 24px;
+margin: 0 0 10px 0;
+margin-left: 720px;
+margin-top: -220px;
+}
+
+#libroimage{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    word-spacing: 0px;
+    height: 24px;
+    width: 24px;
+    margin: 0 0 10px 0;
+    margin-left: 1020px;
+    margin-top: -250px;
+
+}
+
+#texto1{
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+word-spacing: 0px;
+height: 62px;
+width: 322.663px;
+margin: 0 0 16px 0;
+margin-left: 285px;
+}
+#texto2{
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+word-spacing: 0px;
+height: 62px;
+width: 322.663px;
+margin: 0 0 16px 0;
+margin-left: 618px;
+margin-top: -102px;
+}
+#texto3{ font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+word-spacing: 0px;
+height: 62px;
+width: 322.663px;
+margin: 0 0 16px 0;
+margin-left: 974px;
+margin-top: -120px;
+    
+}
+
+#wattpadstudios{
+margin-left: 700px;
+margin-top: -470px;
+}
+#text1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    word-spacing: 0px;
+    height: 30px;
+    width: 499.788px;
+    margin: 24px 0 12px 0;
+    margin-top: -200px;
+    margin-left: 700px;
+
+}
+#text2{
+    font-size: 18px;
+    word-spacing: 0px;
+    height: 67.2px;
+    width: 400px;
+    margin: 12px 0 22px 0;
+    margin-left: 700px;
+    margin-top: 50px;
+    color: #6f6F6F;
+    max-width: 400px;
+}
+#text3{
+    font-size: 18px;
+    word-spacing: 0px;
+    height: 67.2px;
+    width: 400px;
+    margin: 12px 0 22px 0;
+    margin-left: 700px;
+    margin-top: 50px;
+    color: #6f6F6F;
+    max-width: 400px;
+}
+#imagensony{
+margin-left: 700px;
+margin-top: -60px;
+}
+#imagenhulu{
+margin-left: 50px;
+margin-top: -60px;
+}
+#imagensify{
+margin-left: 50px;
+margin-top: -60px;
+}
+#wattpadBooksLogo{
+vertical-align: middle;
+font-size: 16px;
+height: 27px;
+width: 190px;
+margin: 0 0 0 50px;
+margin-top: 90px;
+margin-left: 400px;
+}
+#texto4{
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    word-spacing: 0px;
+    height: 30px;
+    width: 451.788px;
+    margin: 24px 0 12px 0;
+    margin-left: 400px;
+
+}
+#texto5{
+    font-size: 18px;
+    word-spacing: 0px;
+    height: 67.2px;
+    width: 400px;
+    margin: 18px 0 22px 44px;
+    color: #6f6F6F;
+    margin-left: 400px;
+    text-align: right;
+    max-width: 400px;
+}
+#texto6{
+    font-size: 18px;
+    word-spacing: 0px;
+    height: 67.2px;
+    width: 400px;
+    margin: 18px 0 22px 44px;
+    color: #6f6F6F;
+    margin-left: 400px;
+    margin-top: 50px;
+    text-align: right;
+    max-width: 400px;
+}
+#macmillan{
+    margin-left: 410px;
+}
+#anvil{
+    margin-left: 50px;
+
+}
+#penguin{
+    margin-left:50px;
+}
+#wattpadBooksPoster{
+    font-size: 16px;
+    height: 315px;
+    width: 348px;
+    margin-left: 850px;
+    margin-top: -350px;
+
 }

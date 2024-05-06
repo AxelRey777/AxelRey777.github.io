@@ -7,86 +7,168 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="Estilos_Wattpad.css">
+    
 
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img class="XY9s6"  width="126" height="27" src="wattpad_logo.png" alt="Wattpad Logo" data-testid="wp-logo-orange" onclick="window.location.reload()"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <a class="nav-link dropdown" href="#" id="navbarExplorar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Explorar
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-
-              <a class="nav-link dropdown" href="#" id="navbarComunidad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Comunidad
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                
-              </ul>
-
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-
-
-              <li class="nav-item dropdown" id="Escribe1">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarEscribe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Escribe
+    <nav id="DiseñoSuperior" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div id="DiseñoSuperior2" class="container-fluid">
+        <a class="navbar-brand" href="#"> <img class="XY9s6"  width="126" height="27" src="wattpad_logo.png" alt="Wattpad Logo" data-testid="wp-logo-orange" onclick="window.location.reload()"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a class="nav-link dropdown" href="#" id="navbarExplorar" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!--BOTON EXPLORAR-->
+                  Browse
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
-                
                 </ul>
-                
-              </li>
 
-              <button class="boton" id="botonpremium">
-                <li class="H8M6D" ><svg stroke="#e81249" fill="#e81249" width="20" height="20"  viewBox="0 0 24 24" >
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 
-                  </li>
-                  <a class="C-IsT" id="TextoPremium"  target="_blank" >Prueba Premium</a>
-                  </button>
+            <a class="nav-link dropdown" href="#" id="navbarComunidad" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!--BOTON COMUNIDAD-->
+              Community
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              
+            </ul>
 
-                  <li><button class="Ngxjj transparent-button" >Iniciar sesión</button></li>
-                  <li><button class="Ngxjj transparent-button" style="outline: rgb(255, 0, 0) dashed 1px;">Regístrate</button></li>
-            
-                </ul>
-            
-            
-          </div>
+            <form class="d-flex">
+
+              <button id="botonlupa" type="submit">   <!--BOTON DE LA LUPA-->
+                 <svg id="lupaemote" ><g><circle id="circulo" cx="11" cy="11" r="7.8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </g>
+              </svg>
+            </button>
+              <input id="search" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">  <!--BARRA DE BUSQUEDA-->            
+            </form>
+
+
+            <li class="nav-item dropdown" id="Escribe1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarEscribe" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!--BOTON ESCRIBE-->
+                Write
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              
+              </ul>
+              
+            </li>
+
+            <button class="boton" id="botonpremium"> <!--BOTON Y DISEÑO PREMIUM-->
+              <li class="H8M6D" ><svg stroke="#e81249" fill="#e81249" width="20" height="20"  viewBox="0 0 24 24" >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 
+                </li>
+                <a class="C-IsT" id="TextoPremium"  target="_blank" >Try Premium</a>
+                </button>
+                <li><button class="Ngxjj transparent-button" id="InicioSesion" >Log in</button></li> <!--INICIO DE SESION-->
+                <li><button class="Ngxjj transparent-button" id="registro">Sign Up</button></li> <!--REGISTRARSE-->
+              </ul>      
         </div>
-      </nav>
+      </div>
+    </nav>
+
+ </head><!--FIN DEL ENCABEZADO-->
 
 
 
+ <body> <!--INICIO DE LA INTERFAZ-->
+ 
 
+  <div id="intefaz1" style="background-image:url(ToprightImageBackground.svg); background-position: right top; background-repeat: no-repeat; 
+  background-size: auto 75%;padding: 100px 0 40px;; ">   <!--DIV DE LA INTERFAZ-->
+   
+    <div class="-J-io"><div>
+      <h2 id="h2INICIAL" >Hi, we're Wattpad.</h2>     <!--TEXTO INTERFAZ INICIAL-->
+      <h3 id="h3INICIAL" >The world's largest storytelling community</h3>
+      <h4 id="h4INICIAL">Home to 97 million people¹ who spend over 26 billion minutes a month engaged in original stories, Wattpad has democratized storytelling 
+      for a new generation of diverse Gen Z writers and their fans.</h4>
+      <p id="mensajefecha">¹As of July 2023</p>
 
       <div>
-       <pre>><h2> Hola,somos
- Wattpad.</h2></pre>
-      <img src="Computadora_imagen.png" alt="Compu">
+      
+      <button class="e-e4g" id="botonreading">Start Reading</button>
+      <button class="e-e4g" id="botonwriting">Start Writing</button>
+
+      </div>
     </div>
+    <div class="ZOL8n" style="margin-left: 300px;">
+      <img id="imagencompu" src="Computadora_imagen.png">
+    </div>
+   </div>
+  </div>
+
+
+
+  <div class="_9VORJ" style="background-image: url(TopleftimageBackground.svg); background-repeat: no-repeat; background-size: auto 90%;">
+    <div class="_4l20e">
+    <h3 id="yourtstory">See Your Story...</h3>
+
+
+    <div class="XL8J8"><div class="coSnx">
+      <img id="tvimage" src="tv.svg">
+      <p id="texto1">Get produced to movie or film</p>
+    </div>
+      <div class="coSnx">
+        <img id="cineimage" src="cine.svg">
+        <p id="texto2">Get adapted to a TV series</p>
+      </div>
+        <div class="coSnx">
+          <img id="libroimage" src="libro.svg">
+          <p id="texto3">Get published</p>
+        </div>
+        </div>
+      </div>
+  
+
+      <div class="mq3ZG ojAvF" data-testid="studios-and-books-container">
+        <div>
+          <img style="margin-left: 270px;" src="Computadoraimagen2.png" width="414">
+        </div>
+        <div class="_7nKAS">
+          <img id="wattpadstudios" src="wattpadstudios.svg">
+          <h3 id="text1">Your original story could be the next big hit</h3>
+          <p id="text2">Wattpad Studios discovers untapped, unsigned, and talented writers on Wattpad and connects them to global multi-media entertainment companies.</p>
+          <p id="text3">Wattpad Studios works with partners such as:</p>
+          <img id="imagensony" src="sony.svg" width="31">
+          <img id="imagenhulu" src="hulu.svg" width="61">
+          <img id="imagensify" src="syfy.svg" width="81">
+        </div>
+      </div>
+      <div class="v-Avg mq3ZG ojAvF" data-testid="studios-and-books-container">
+        <div class="zgt2s">
+          <img id="wattpadBooksLogo" src="wattpadBooksLogo.svg" width="190">
+          <h3 id="texto4">Your voice belongs on bookshelves</h3>
+          <p id="texto5">Wattpad Books aspires to recognize and reflect diverse voices by taking Wattpad stories to published book and onto bookshelves around the world.</p>
+          <p id="texto6">Wattpad Books works with partners such as:</p>
+          <img id="macmillan" src="macmillan.png" width="110">
+          <img id="anvil" src="anvil.png" width="87">
+          <img id="penguin" src="penguin.png" width="97">
+        </div>
+        <div>
+          <img id="wattpadBooksPoster" src="wattpadBooksPoster.png" width="348">
+        </div>
+      </div>
+    </div>
+   
+
+  
+
+
+
+
+      
 
 
     <script src="js/bootstrap.js"></script>
-</body>
+ </body>
 </html>
