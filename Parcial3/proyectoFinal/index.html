@@ -24,6 +24,76 @@
             <img src="Imagenes/CapturaConsulta2.PNG" alt="Imagen consulta 2">
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE 'si'
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 3. Obtener el listado (NOMBRE y APELLIDOS) de ALUMNOS QUE TENGAN BECA </p>
+            <img src="Imagenes/CapturaConsulta3.PNG" alt="Imagen consulta 3">
+        </div>
+    </div>
+    <div class="container"> 
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;"> SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN  tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h1>
+            <p style=" color: azure; background-color: green;">Consulta 4. Obtener el listado de PROFESORES(NOMBRE APELLIDO) y su NUMERO DE CONTACTO</p>
+            <img src="Imagenes/CapturaConsulta4.PNG" alt="Imagen consulta 4">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2, asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 5. Obtener el listado de ALUMNOS (TODOS LOS CAMPOS) que estan inscritos a la ASIGNATURA de programacion AS009</p>
+            <img src="Imagenes/CapturaConsulta5.PNG" alt="Imagen consulta 5">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 6. Obtener el listado de PROFESORES y ASIGNATURAS que imparten</p>
+            <img src="" alt="Imagen consulta 6">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 7. Mostrar la ASIGNATURA que tiene mas ALUMNOS INSCRITOS y su TOTAL</p>
+            <img src="" alt="Imagen consulta 7">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR  con ID PR048 (JOSE MANUEL)</p>
+            <img src="" alt="Imagen consulta 8">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 9. Obtener el listado de CURSOS con ASIGNATURAS y el MAESTRO que las imparte  </p>
+            <img src="" alt="Imagen consulta 9">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            </h1>
+            <p style=" color: azure; background-color: green;">Consulta 10. Obtener el listado de ALUMNOS con ASIGNATURAS que cursa PROFESOR que le imparte y CURSO al que pertenece </p>
+            <img src="" alt="Imagen consulta 10">
+        </div>
+    </div>
+
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
