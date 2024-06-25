@@ -51,19 +51,19 @@
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura
             </h1>
             <p style=" color: azure; background-color: green;">Consulta 6. Obtener el listado de PROFESORES y ASIGNATURAS que imparten</p>
-            <img src="" alt="Imagen consulta 6">
+            <img src="Imagenes/CapturaConsulta6.PNG" alt="Imagen consulta 6">
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;
             </h1>
             <p style=" color: azure; background-color: green;">Consulta 7. Mostrar la ASIGNATURA que tiene mas ALUMNOS INSCRITOS y su TOTAL</p>
-            <img src="" alt="Imagen consulta 7">
+            <img src="Imagenes/CapturaConsulta7.PNG" alt="Imagen consulta 7">
         </div>
     </div>
 
