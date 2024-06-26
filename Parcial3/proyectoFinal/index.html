@@ -8,92 +8,100 @@
     <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
+    <div style="background-color: burlywood;">
     Axel Reyes Aguilar 20/06/2024<br><br><br>
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT * FROM `alumno` WHERE 1</h1>
-            <p style=" color: azure; background-color: green;">Consulta 1. Obtener el listado de todos los alumnos de facultad</p>
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT * FROM `alumno` WHERE 1</h1>
+            <p style=" color: black; background-color: brown;">Consulta 1. Obtener el listado de todos los alumnos de facultad</p>
             <img src="Imagenes/CapturaConsulta1.PNG" alt="Imagen consulta 1">
         </div>
     </div> <br><br><br><br><br>
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 2. Obtener el listado de cursos(Nombre) y las asignaturas que tiene</p>
+            <p style=" color: black; background-color: brown;">Consulta 2. Obtener el listado de cursos(Nombre) y las asignaturas que tiene</p>
             <img src="Imagenes/CapturaConsulta2.PNG" alt="Imagen consulta 2">
         </div>
-    </div>
+    </div><br><br><br><br><br>
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE 'si'
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 FROM alumno WHERE beca LIKE 'si'
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 3. Obtener el listado (NOMBRE y APELLIDOS) de ALUMNOS QUE TENGAN BECA </p>
+            <p style=" color: black; background-color: brown;">Consulta 3. Obtener el listado (NOMBRE y APELLIDOS) de ALUMNOS QUE TENGAN BECA </p>
             <img src="Imagenes/CapturaConsulta3.PNG" alt="Imagen consulta 3">
         </div>
-    </div>
+    </div><br><br><br><br><br>
     <div class="container"> 
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;"> SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN  tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h1>
-            <p style=" color: azure; background-color: green;">Consulta 4. Obtener el listado de PROFESORES(NOMBRE APELLIDO) y su NUMERO DE CONTACTO</p>
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;"> SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono FROM profesor INNER JOIN  tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h1>
+            <p style=" color: black; background-color: brown;">Consulta 4. Obtener el listado de PROFESORES(NOMBRE APELLIDO) y su NUMERO DE CONTACTO</p>
             <img src="Imagenes/CapturaConsulta4.PNG" alt="Imagen consulta 4">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2, asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT alumno.nombre, alumno.apellido1, alumno.apellido2, asignatura.idAsignatura FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.idAsignatura LIKE "AS009"
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 5. Obtener el listado de ALUMNOS (TODOS LOS CAMPOS) que estan inscritos a la ASIGNATURA de programacion AS009</p>
+            <p style=" color: black; background-color: brown;">Consulta 5. Obtener el listado de ALUMNOS (TODOS LOS CAMPOS) que estan inscritos a la ASIGNATURA de programacion AS009</p>
             <img src="Imagenes/CapturaConsulta5.PNG" alt="Imagen consulta 5">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura = asignatura.idAsignatura
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 6. Obtener el listado de PROFESORES y ASIGNATURAS que imparten</p>
+            <p style=" color: black; background-color: brown;">Consulta 6. Obtener el listado de PROFESORES y ASIGNATURAS que imparten</p>
             <img src="Imagenes/CapturaConsulta6.PNG" alt="Imagen consulta 6">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN  matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY
+                asignatura.nombre ORDER BY TOT_ins DESC;
+
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 7. Mostrar la ASIGNATURA que tiene mas ALUMNOS INSCRITOS y su TOTAL</p>
+            <p style=" color: black; background-color: brown;">Consulta 7. Mostrar la ASIGNATURA que tiene mas ALUMNOS INSCRITOS y su TOTAL</p>
             <img src="Imagenes/CapturaConsulta7.PNG" alt="Imagen consulta 7">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT alumno.nombre, profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idProfesor="PR048" INNER JOIN matricula ON impartir.idAsignatura=matricula.idAsignatura
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR  con ID PR048 (JOSE MANUEL)</p>
-            <img src="" alt="Imagen consulta 8">
+            <p style=" color: black; background-color: brown;">Consulta 8. Obtener el listado de ALUMNOS que les da clase el PROFESOR  con ID PR048 (JOSE MANUEL)</p>
+            <img src="Imagenes/CapturaConsulta8.PNG" alt="Imagen consulta 8">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso= curso.idCurso INNER JOIN profesor ON asignatura.coordinador = profesor.idProfesor
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 9. Obtener el listado de CURSOS con ASIGNATURAS y el MAESTRO que las imparte  </p>
-            <img src="" alt="Imagen consulta 9">
+            <p style=" color: black; background-color: brown;">Consulta 9. Obtener el listado de CURSOS con ASIGNATURAS y el MAESTRO que las imparte  </p>
+            <img src="Imagenes/CapturaConsulta9.PNG" alt="Imagen consulta 9">
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <div class="container">
         <div class="row">
-            <h1 style="background-color: black; border: none; border-radius: 5px; color: azure;">h
+            <h1 style="background-color: beige; border: none; border-radius: 5px; color: black;">SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno 
+                INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno 
+                INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura 
+                INNER JOIN impartir ON impartir.idAsignatura = asignatura.idAsignatura 
+                INNER JOIN profesor ON impartir.idProfesor = profesor.idProfesor 
+                INNER JOIN curso ON curso.idCurso = asignatura.curso
             </h1>
-            <p style=" color: azure; background-color: green;">Consulta 10. Obtener el listado de ALUMNOS con ASIGNATURAS que cursa PROFESOR que le imparte y CURSO al que pertenece </p>
-            <img src="" alt="Imagen consulta 10">
+            <p style=" color: black; background-color: brown;">Consulta 10. Obtener el listado de ALUMNOS con ASIGNATURAS que cursa PROFESOR que le imparte y CURSO al que pertenece </p>
+            <img src="Imagenes/CapturaConsulta10.PNG" alt="Imagen consulta 10">
         </div>
     </div>
-
+</div>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
