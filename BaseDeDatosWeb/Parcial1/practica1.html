@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica #1. Envio de datos con PHP</title>
+</head>
+<body>
+    <h1>Envío de datos con PHP</h1>
+    <form action="practica1.php" method="GET">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" required><br><br>
+
+        <label for="">Genero:</label>
+        <select name="genero" id="">
+            <option value="">Seleccione su genero</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro.</option>
+        </select> <br><br>
+
+        <label for="">Edad:</label>
+        <input type="text" name="edad" required><br><br>
+
+        <label for="">Escuela</label>
+        <select name="escuela" id="" required>
+            <option value="">Selecciona una escuela</option>
+            <option value="Cetis107">Prepa Cetis 107</option>
+            <option value="Cobaes">Escuela Cobaes</option>
+        </select> <br><br>
+
+        <label for="">Comida favorita:</label>
+        <input type="text" name="comida" required><br><br>
+
+        <label for="">Sangre</label>
+        <select name="sangre" id="">
+            <option value="">Selecciona tu tipo sanguineo</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+        </select><br><br>
+
+        <label for="">rh de la sangre</label>
+        <select name="rhsangre" id="">
+            <option value="">Rh de la sangre </option>
+            <option value="+">Positivo</option>
+            <option value="-">Negativo</option>
+        </select> <br><br>
+
+       <!--Hecho por:Axel Reyes Aguilar-->
+       <!--PROFEEE TIREE PARO SI LEE ESTO NO ENTIENDO VUE ESTA MUY CONFUSO deme clases😭-->
+
+        <!-- Agregar otros 2 campos -->
+
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+</html>
