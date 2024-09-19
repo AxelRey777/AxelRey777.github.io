@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="\xampp\htdocs\Parcial1\bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css">
+</head>
+<body style="background-color: blanchedalmond;">
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1 style="color: orangered;">Exámen de musica</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header" style="border-radius: 5px; border-color: aquamarine;">
+                            <h1 style="color: orangered;" >1. ¿Cual de estos es un instrumento de cuerdas?</h1>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="teclado" required> TECLADO </p>
+                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="Saxofon" required> SAXOFON </p>
+                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="Guitarra" required> GUITARRA </p>
+                        </div>
+                    </div><br><br><br>
+                    <div class="card p-4 mb-4">
+                
+                           <h1 style="color: orangered;">2. <input type="text" name="pregunta2" style="font-size: 25px;" required> Artista de musica clasica que era sordo</h1> 
+                       
+                    </div> <br><br><br>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                       <h1 style="color: orangered;"> 3. ¿Cuáles de los siguientes géneros musicales son considerados parte de la música clásica? (Selecciona 2)</h1>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Sinfonia"  > SINFONIA </p>
+                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Sonata" > SONATA </p>
+                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Regueton" > REGUETON </p>
+                        </div>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen" style="border: 30px; font-size: 25px; border-radius: 20px; border-color: black ; height: 50px;">
+        </form>
+    </div>
+</body>
+</html>
