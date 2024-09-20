@@ -4,40 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen en línea</title>
-    <link rel="stylesheet" href="\xampp\htdocs\Parcial1\bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
 </head>
 <body style="background-color: blanchedalmond;">
     <div class="container">
-        <form action="practica4.php" method="POST">
+        <form action="practica4.php" method="POST">  <!--HECHO POR AXEL REYES AGUILAR -->
             <div class="row">
-                <h1 style="color: orangered;">Exámen de musica</h1><hr>
-                    <div class="card mb-4">
-                        <div class="card-header" style="border-radius: 5px; border-color: aquamarine;">
-                            <h1 style="color: orangered;" >1. ¿Cual de estos es un instrumento de cuerdas?</h1>
-                        </div>
-                        <div class="card-body">
-                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="teclado" required> TECLADO </p>
-                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="Saxofon" required> SAXOFON </p>
-                            <p style="font-size: 25px;"><input type="radio" name="pregunta1" value="Guitarra" required> GUITARRA </p>
-                        </div>
-                    </div><br><br><br>
-                    <div class="card p-4 mb-4">
+                <h1>Exámen de musica</h1>
+                      <!--NOMBRE ALUMNO -->
+                <input type="text" name="nombre" style="font-size: 25px;" placeholder="Escribe tu nombre" required><br><br> <hr>
                 
-                           <h1 style="color: orangered;">2. <input type="text" name="pregunta2" style="font-size: 25px;" required> Artista de musica clasica que era sordo</h1> 
-                       
-                    </div> <br><br><br>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                       <h1 style="color: orangered;"> 3. ¿Cuáles de los siguientes géneros musicales son considerados parte de la música clásica? (Selecciona 2)</h1>
+                    <div class="card mb-4"> <!--PREGUNTA 1 -->
+                        <div class="card-header" >
+                            <h1 style="font-size: 35; color: orangered;">1. ¿Cual de estos es un instumento musical de cuerdas?</h1> 
+
                         </div>
                         <div class="card-body">
-                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Sinfonia"  > SINFONIA </p>
-                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Sonata" > SONATA </p>
-                            <p style="font-size: 25px;"><input type="checkbox" name="pregunta3[]" value="Regueton" > REGUETON </p>
-                        </div>
+                            <p><input type="radio" name="pregunta1" value="GUITARRA" required checked> GUITARRA </p>
+                            <p><input type="radio" name="pregunta1" value="PIANO" required> PIANO </p>
+                            <p><input type="radio" name="pregunta1" value="BATERIA" required > BATERIA </p>
+                        </div><hr>
                     </div>
+                    <div class="card p-4 mb-4"> <!--PREGUNTA 2 -->
+                        <p>
+                            <h1 style="font-size: 35; color: orangered;"> 2. <input type="text" name="pregunta2" value="Beethoven" style="color: orangered; font-size: 25px;" required checked> Fue un compositor de musica clasica el cual estaba sordo.</h1>
+                        </p><hr>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><!--PREGUNTA 3 -->
+                            <h1 style="font-size: 35; color: orangered;">3. ¿Cual de los siguientes generos es de musica clasica? (Selecciona 2)</h1> 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="sonata" checked> Sonata </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="sinfonia" checked> Sinfonia </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="opera" > Opera </p>
+                        </div>
+                    </div><hr>
+                    <div class="card mb-4">
+                        <div class="card-header"><!--PREGUNTA 4 -->
+                            <h1 style="font-size: 35; color: orangered;">4. ¿En qué periodo de la historia de la música compuso Johann Sebastian Bach?</h1> 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta4" value="Barroco" required checked> BARROCO </p>
+                            <p><input type="radio" name="pregunta4" value="Clasicismo" required> CLASICISMO </p>
+                            <p><input type="radio" name="pregunta4" value="Renacimiento" required > RENACIMIENTO </p>
+                        </div>
+                    </div><hr>
+                    <div class="card p-4 mb-4">  <!--PREGUNTA 5 Por un laDO sale el SOL-->
+                        <p>
+                            
+                            <h1 style="font-size: 35; color: orangered;">5. Cual es la nota musical de este audio?(Todo mayuscula).  <input type="text" name="pregunta5" value="do" required checked></h1>  
+                            <audio controls autoplay muted>
+                                <source src="Sonido1.mp3" type="audio/mp3">
+                                <source src="Sonido1.mp3" type="audio/mp3">
+                              </audio>
+                        </p>
+                    </div><hr>
+
+                    <div class="card mb-4"> <!--PREGUNTA 6 -->
+                        <div class="card-header" >
+                            <h1 style="font-size: 35; color: orangered;">6. ¿Cuál es el nombre del sistema que clasifica las voces humanas en soprano, contralto, tenor y bajo?</h1> 
+
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta6" value="RANGO VOCAL" required> RANGO VOCAL </p>
+                            <p><input type="radio" name="pregunta6" value="TESITURA" required checked> TESITURA </p>
+                            <p><input type="radio" name="pregunta6" value="TIMBRE" required > TIMBRE </p>
+                        </div><hr>
+                    </div>
+                    <div class="card p-4 mb-4"> <!--PREGUNTA 7 -->
+                        
+                            <h1 style="font-size: 35; color: orangered;">7. Mozart fue el compositor mas importante del 
+                               <input type="text" name="pregunta7" value="Clasicismo" style="color: orangered; font-size: 25px;" required checked> 
+                            </h1>
+                        <hr>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><!--PREGUNTA 8 -->
+                            <h1 style="font-size: 35; color: orangered;">8. ¿Cual de los siguientes instrumentos se usan en el jazz? (Selecciona 2)</h1> 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta8[]" value="Saxofon" checked> Saxofon </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Oboe" > Oboe </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Contrabajo" checked> Contrabajo </p>
+                        </div>
+                    </div><hr>
+                    <div class="card mb-4">
+                        <div class="card-header"><!--PREGUNTA 9 -->
+                            <h1 style="font-size: 35; color: orangered;">9. ¿Que significa el tempo en la musica?</h1> 
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta9" value="Intensidad" required> La intensidad de la musica </p>
+                            <p><input type="radio" name="pregunta9" value="Ritmo" required> El ritmo de la musica </p>
+                            <p><input type="radio" name="pregunta9" value="Velocidad" required checked> La velocidad de la música </p>
+                            <p><input type="radio" name="pregunta9" value="Altura" required> Altura de las notas </p>
+                        </div>
+                    </div><hr>
+
+                    <div class="card p-4 mb-4">  <!--PREGUNTA 10 Por un laDO sale el SOL-->
+                        <p>
+                            
+                            <h1 style="font-size: 35; color: orangered;">10. Cual es la nota musical de este audio?(Todo mayuscula).  <input type="text" name="pregunta10" value="sol" required checked></h1>  
+                            <audio controls autoplay muted>
+                                <source src="Sonido2.mp3" type="audio/mp3">
+                                <source src="Sonido2.mp3" type="audio/mp3">
+                              </audio>
+                        </p>
+                    </div><hr>
+
+
             </div>
-            <br><input type="submit" class="btn btn-primary" value="Terminar examen" style="border: 30px; font-size: 25px; border-radius: 20px; border-color: black ; height: 50px;">
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
         </form>
     </div>
 </body>
