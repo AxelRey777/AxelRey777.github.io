@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica #7 Javascript</title>
-    <script src="Practica7.js"></script>
 </head>
+<style>
+    input{
+        font-size: 60px;
+        max-width: 60px;
+    }
+</style>
 <body>
+    <script src="Practica7.js"></script>
+    
      <h1>practica 7 Javascript</h1>
 
      <input type="text" onkeyup="validar(1)" id="cuadro1">
@@ -20,5 +27,8 @@
      <input type="text" onkeyup="validar(7)" id="cuadro7">
      <input type="text" onkeyup="validar(8)" id="cuadro8">
      <input type="text" onkeyup="validar(9)" id="cuadro9"> <br>
+
+     <h1 id="ganador"></h1>
+     <button onclick="reiniciar()">REINICIAR JUEGO</button>
 </body>
 </html>
